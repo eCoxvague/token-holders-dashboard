@@ -155,64 +155,6 @@
       font-weight: 700;
     }
 
-    .analysis-title {
-      margin: 0 0 6px;
-      font-size: 13px;
-      color: #d8e9ff;
-      font-weight: 700;
-    }
-
-    .analysis-wrap {
-      border: 1px solid rgba(92, 141, 194, 0.28);
-      border-radius: 10px;
-      background: rgba(7, 24, 46, 0.62);
-      padding: 8px 10px;
-      margin-bottom: 10px;
-      max-height: 120px;
-      overflow: auto;
-    }
-
-    .analysis-list {
-      margin: 0;
-      padding-left: 18px;
-      color: #c9dcf6;
-      font-size: 12px;
-      line-height: 1.35;
-    }
-
-    .analysis-list li {
-      margin: 0 0 4px;
-    }
-
-    .exchange-title {
-      margin: 0 0 6px;
-      font-size: 13px;
-      color: #d8e9ff;
-      font-weight: 700;
-    }
-
-    .exchange-wrap {
-      border: 1px solid rgba(92, 141, 194, 0.28);
-      border-radius: 10px;
-      background: rgba(7, 24, 46, 0.62);
-      padding: 8px 10px;
-      margin-bottom: 10px;
-      max-height: 120px;
-      overflow: auto;
-    }
-
-    .exchange-list {
-      margin: 0;
-      padding-left: 18px;
-      color: #c9dcf6;
-      font-size: 12px;
-      line-height: 1.35;
-    }
-
-    .exchange-list li {
-      margin: 0 0 4px;
-    }
-
     .holders-wrap {
       border: 1px solid rgba(92, 141, 194, 0.28);
       border-radius: 10px;
@@ -288,6 +230,14 @@
       white-space: nowrap;
     }
 
+    .tip-note {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 10px;
+      color: #b9d2ef;
+      font-weight: 700;
+    }
+
     .foot {
       margin: 9px 0 0;
       color: #88a8ce;
@@ -331,23 +281,6 @@
         </div>
 
         <div class="contract">Contract: 0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9</div>
-        <p class="analysis-title">Kontrat Analizi (ETH)</p>
-        <div class="analysis-wrap">
-          <ul class="analysis-list">
-            <li>Kontrat holder adreslerinin çoğu <strong>SafeProxy</strong> tipinde.</li>
-            <li>Büyük bölüm <strong>Pieverse: Deployer</strong> tarafından oluşturulmuş.</li>
-            <li>Bu yapı genelde <strong>multisig treasury/team/operasyon</strong> cüzdanlarında kullanılır.</li>
-            <li>Bir adres farklı creator’dan çıksa da SafeProxy sınıfında.</li>
-          </ul>
-        </div>
-        <p class="exchange-title">Exchange Olan Adresler (ETH)</p>
-        <div class="exchange-wrap">
-          <ul class="exchange-list">
-            <li><strong>Bybit: Hot Wallet</strong> <span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></li>
-            <li><strong>Gate Deposit</strong> <span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></li>
-            <li><strong>Gate Deposit</strong> <span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></li>
-          </ul>
-        </div>
         <p class="holders-title">ETH İlk 20 Holder Listesi</p>
 
         <div class="holders-wrap">
@@ -372,14 +305,14 @@
               <tr><td>9</td><td><span class="holder-name">0xF9b1...4F65</span><span class="mono">0xF9b15A93Ef0De78f4A2670650D1990b5edf44F65</span></td><td><span class="pill pill-contract">Contract</span></td><td class="pct">4.4054</td></tr>
               <tr><td>10</td><td><span class="holder-name">0x0605...e934</span><span class="mono">0x060566618a3F64FCB52c5Fa20ED56AE0BbF2e934</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">3.6344</td></tr>
               <tr><td>11</td><td><span class="holder-name">0xC532...D9BB</span><span class="mono">0xC5326BFCdA0541344cF091F0C9cb586512fBD9BB</span></td><td><span class="pill pill-contract">Contract</span></td><td class="pct">2.2027</td></tr>
-              <tr><td>12</td><td><span class="holder-name">Bybit: Hot Wallet</span><span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></td><td><span class="pill pill-exchange">Exchange</span></td><td class="pct">1.2136</td></tr>
-              <tr><td>13</td><td><span class="holder-name">Gate Deposit</span><span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></td><td><span class="pill pill-exchange">Exchange</span></td><td class="pct">0.9451</td></tr>
+              <tr><td>12</td><td><span class="holder-name">Bybit: Hot Wallet</span><span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></td><td><span class="pill pill-exchange">Exchange</span><span class="tip-note">Bybit</span></td><td class="pct">1.2136</td></tr>
+              <tr><td>13</td><td><span class="holder-name">Gate Deposit</span><span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></td><td><span class="pill pill-exchange">Exchange</span><span class="tip-note">Gate</span></td><td class="pct">0.9451</td></tr>
               <tr><td>14</td><td><span class="holder-name">0x372B...39F5</span><span class="mono">0x372BCd9F251A1E845A945D79e920Dc361Cb939F5</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.5507</td></tr>
               <tr><td>15</td><td><span class="holder-name">0x8ffD...95bf</span><span class="mono">0x8ffD01ee69D58091B73f50EB615EfeCceB6f95bf</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.5507</td></tr>
               <tr><td>16</td><td><span class="holder-name">0xfF17...6597</span><span class="mono">0xfF17b87E80F5Ec19D101c44952935C2db76B6597</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.2417</td></tr>
               <tr><td>17</td><td><span class="holder-name">0xa42e...3079</span><span class="mono">0xa42e9d77A42aD8B8b1d56a85CD136634E8273079</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.2203</td></tr>
               <tr><td>18</td><td><span class="holder-name">0x0025...AA1</span><span class="mono">0x00254b193C014ead4642DdD0157798Bc5c003AA1</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.2203</td></tr>
-              <tr><td>19</td><td><span class="holder-name">Gate Deposit</span><span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></td><td><span class="pill pill-exchange">Exchange</span></td><td class="pct">0.1669</td></tr>
+              <tr><td>19</td><td><span class="holder-name">Gate Deposit</span><span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></td><td><span class="pill pill-exchange">Exchange</span><span class="tip-note">Gate</span></td><td class="pct">0.1669</td></tr>
               <tr><td>20</td><td><span class="holder-name">0x2887...955b</span><span class="mono">0x288761BC6030f1C5b39A2D8446cA91578eB3955b</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.1652</td></tr>
             </tbody>
           </table>
@@ -402,24 +335,6 @@
         </div>
 
         <div class="contract">Contract: 0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9</div>
-        <p class="analysis-title">Kontrat Analizi (BSC)</p>
-        <div class="analysis-wrap">
-          <ul class="analysis-list">
-            <li><strong>0x9ff8... ve 0x89df...</strong> adresleri SafeProxy (Pieverse deployer ilişkili).</li>
-            <li><strong>0x238a...</strong> etiketi: <strong>PancakeSwap Infinity Vault</strong>.</li>
-            <li><strong>0x317c... ve 0x75f8...</strong> PancakeSwap etiketli kontrat adresleri.</li>
-            <li><strong>0x73d8...</strong> kontrat doğrulanmış, ancak açık public label yok.</li>
-          </ul>
-        </div>
-        <p class="exchange-title">Exchange Olan Adresler (BSC)</p>
-        <div class="exchange-wrap">
-          <ul class="exchange-list">
-            <li><strong>Bybit: Hot Wallet</strong> <span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></li>
-            <li><strong>Gate 5</strong> <span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></li>
-            <li><strong>Gate 1</strong> <span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></li>
-            <li><strong>MEXC 13</strong> <span class="mono">0x4982085C9e2F89F2eCb8131Eca71aFAD896e89CB</span></li>
-          </ul>
-        </div>
         <p class="holders-title">BSC İlk 20 Holder Listesi</p>
 
         <div class="holders-wrap">
@@ -433,18 +348,18 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>1</td><td><span class="holder-name">Bybit: Hot Wallet</span><span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></td><td><span class="pill pill-exchange">Exchange</span></td><td class="pct">27.5335</td></tr>
+              <tr><td>1</td><td><span class="holder-name">Bybit: Hot Wallet</span><span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></td><td><span class="pill pill-exchange">Exchange</span><span class="tip-note">Bybit</span></td><td class="pct">27.5335</td></tr>
               <tr><td>2</td><td><span class="holder-name">0x9ff8...E97F</span><span class="mono">0x9ff8bF71be27e603B196DA283C7f782F0e70E97F</span></td><td><span class="pill pill-contract">Contract</span></td><td class="pct">16.3090</td></tr>
               <tr><td>3</td><td><span class="holder-name">0xa0B4...0B49</span><span class="mono">0xa0B4b95EA5f8710ff5B0c59e096Cae8186b10B49</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">16.3090</td></tr>
               <tr><td>4</td><td><span class="holder-name">0x57AC...7161</span><span class="mono">0x57AC0fd5E01D964f76e8f60B7F432F31f5F27161</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">10.4921</td></tr>
               <tr><td>5</td><td><span class="holder-name">0x952E...D2a6</span><span class="mono">0x952Efd5Ead63975889721dF2673c47D36Ca1D2a6</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">4.5578</td></tr>
               <tr><td>6</td><td><span class="holder-name">0x89Df...95fD</span><span class="mono">0x89DfDc3990308c07fC095A7A6B5dE78b977F95fD</span></td><td><span class="pill pill-contract">Contract</span></td><td class="pct">4.3491</td></tr>
-              <tr><td>7</td><td><span class="holder-name">Gate 5</span><span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></td><td><span class="pill pill-exchange">Exchange</span></td><td class="pct">3.7824</td></tr>
+              <tr><td>7</td><td><span class="holder-name">Gate 5</span><span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></td><td><span class="pill pill-exchange">Exchange</span><span class="tip-note">Gate</span></td><td class="pct">3.7824</td></tr>
               <tr><td>8</td><td><span class="holder-name">0x73D8...46Db</span><span class="mono">0x73D8bD54F7Cf5FAb43fE4Ef40A62D390644946Db</span></td><td><span class="pill pill-contract">Contract</span></td><td class="pct">2.7678</td></tr>
               <tr><td>9</td><td><span class="holder-name">0x317C...A12b</span><span class="mono">0x317Cd61fa24e2E4068b4C47Bd58D5fC9f4E7A12b</span></td><td><span class="pill pill-contract">Contract</span></td><td class="pct">2.4619</td></tr>
-              <tr><td>10</td><td><span class="holder-name">Gate 1</span><span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></td><td><span class="pill pill-exchange">Exchange</span></td><td class="pct">2.4396</td></tr>
+              <tr><td>10</td><td><span class="holder-name">Gate 1</span><span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></td><td><span class="pill pill-exchange">Exchange</span><span class="tip-note">Gate</span></td><td class="pct">2.4396</td></tr>
               <tr><td>11</td><td><span class="holder-name">0x9697...b748</span><span class="mono">0x96973F7B83A3c785d94e0a6d8712174aBb81b748</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">2.1814</td></tr>
-              <tr><td>12</td><td><span class="holder-name">MEXC 13</span><span class="mono">0x4982085C9e2F89F2eCb8131Eca71aFAD896e89CB</span></td><td><span class="pill pill-exchange">Exchange</span></td><td class="pct">0.7556</td></tr>
+              <tr><td>12</td><td><span class="holder-name">MEXC 13</span><span class="mono">0x4982085C9e2F89F2eCb8131Eca71aFAD896e89CB</span></td><td><span class="pill pill-exchange">Exchange</span><span class="tip-note">MEXC</span></td><td class="pct">0.7556</td></tr>
               <tr><td>13</td><td><span class="holder-name">Pancakeswap Infinity Vault</span><span class="mono">0x238a358808379702088667322f80aC48bAd5e6c4</span></td><td><span class="pill pill-contract">Contract</span></td><td class="pct">0.6480</td></tr>
               <tr><td>14</td><td><span class="holder-name">0xDD04...5afD</span><span class="mono">0xDD04f596569B09BB967ab9f20cDc1b7bc7495afD</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.5017</td></tr>
               <tr><td>15</td><td><span class="holder-name">0x64Bd...7C88</span><span class="mono">0x64Bd104C1577DFa69a0BDe7E0f090eEcf82B7C88</span></td><td><span class="pill pill-wallet">Wallet/EOA</span></td><td class="pct">0.3344</td></tr>
