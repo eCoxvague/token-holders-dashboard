@@ -184,6 +184,35 @@
       margin: 0 0 4px;
     }
 
+    .exchange-title {
+      margin: 0 0 6px;
+      font-size: 13px;
+      color: #d8e9ff;
+      font-weight: 700;
+    }
+
+    .exchange-wrap {
+      border: 1px solid rgba(92, 141, 194, 0.28);
+      border-radius: 10px;
+      background: rgba(7, 24, 46, 0.62);
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      max-height: 120px;
+      overflow: auto;
+    }
+
+    .exchange-list {
+      margin: 0;
+      padding-left: 18px;
+      color: #c9dcf6;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .exchange-list li {
+      margin: 0 0 4px;
+    }
+
     .holders-wrap {
       border: 1px solid rgba(92, 141, 194, 0.28);
       border-radius: 10px;
@@ -278,12 +307,12 @@
 </head>
 <body>
   <main class="wrap">
-    <h1 class="title">PIEVERSE Token Holder Dagilimi</h1>
-    <p class="subtitle">Snapshot: 19 Nisan 2026 22:16 (UTC+3) | Tek sayfa gorunum | Arial</p>
+    <h1 class="title">PIEVERSE Token Holder Dağılımı</h1>
+    <p class="subtitle">Snapshot: 19 Nisan 2026 22:16 (UTC+3)</p>
 
     <div class="legend">
-      <div class="legend-item"><span class="pill pill-contract">Contract</span> Akilli kontrat, pool, vault veya app adresi.</div>
-      <div class="legend-item"><span class="pill pill-wallet">Wallet/EOA</span> Normal kullanici cuzdani (private key).</div>
+      <div class="legend-item"><span class="pill pill-contract">Contract</span> Akıllı kontrat, pool, vault veya uygulama adresi.</div>
+      <div class="legend-item"><span class="pill pill-wallet">Wallet/EOA</span> Normal kullanıcı cüzdanı (private key).</div>
       <div class="legend-item"><span class="pill pill-exchange">Exchange Wallet</span> Borsa saklama/deposit/hot wallet adresi.</div>
     </div>
 
@@ -302,16 +331,24 @@
         </div>
 
         <div class="contract">Contract: 0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9</div>
-        <p class="analysis-title">Contract Findings (ETH)</p>
+        <p class="analysis-title">Kontrat Analizi (ETH)</p>
         <div class="analysis-wrap">
           <ul class="analysis-list">
-            <li>Top contract wallets are mostly <strong>SafeProxy</strong> contracts.</li>
-            <li>Most are created by <strong>Pieverse: Deployer</strong> (same deployer cluster).</li>
-            <li>This pattern is typically used for <strong>multisig treasury/team/ops wallets</strong>.</li>
-            <li>One contract is from another creator address, but still SafeProxy type.</li>
+            <li>Kontrat holder adreslerinin çoğu <strong>SafeProxy</strong> tipinde.</li>
+            <li>Büyük bölüm <strong>Pieverse: Deployer</strong> tarafından oluşturulmuş.</li>
+            <li>Bu yapı genelde <strong>multisig treasury/team/operasyon</strong> cüzdanlarında kullanılır.</li>
+            <li>Bir adres farklı creator’dan çıksa da SafeProxy sınıfında.</li>
           </ul>
         </div>
-        <p class="holders-title">ETH Top 20 Holder Listesi</p>
+        <p class="exchange-title">Exchange Olan Adresler (ETH)</p>
+        <div class="exchange-wrap">
+          <ul class="exchange-list">
+            <li><strong>Bybit: Hot Wallet</strong> <span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></li>
+            <li><strong>Gate Deposit</strong> <span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></li>
+            <li><strong>Gate Deposit</strong> <span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></li>
+          </ul>
+        </div>
+        <p class="holders-title">ETH İlk 20 Holder Listesi</p>
 
         <div class="holders-wrap">
           <table>
@@ -348,7 +385,7 @@
           </table>
         </div>
 
-        <p class="foot">Top 20 tip dagilimi: 10 Contract | 7 Wallet/EOA | 3 Exchange Wallet</p>
+        <p class="foot">Top 20 tip dağılımı: 10 Contract | 7 Wallet/EOA | 3 Exchange Wallet</p>
       </article>
 
       <article class="card">
@@ -365,16 +402,25 @@
         </div>
 
         <div class="contract">Contract: 0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9</div>
-        <p class="analysis-title">Contract Findings (BSC)</p>
+        <p class="analysis-title">Kontrat Analizi (BSC)</p>
         <div class="analysis-wrap">
           <ul class="analysis-list">
-            <li><strong>0x9ff8... and 0x89df...</strong> are SafeProxy contracts (Pieverse deployer related).</li>
-            <li><strong>0x238a...</strong> is tagged as <strong>PancakeSwap Infinity Vault</strong>.</li>
-            <li><strong>0x317c... and 0x75f8...</strong> are PancakeSwap-tagged contract addresses.</li>
-            <li><strong>0x73d8...</strong> is verified as contract, but public contract label is not explicit.</li>
+            <li><strong>0x9ff8... ve 0x89df...</strong> adresleri SafeProxy (Pieverse deployer ilişkili).</li>
+            <li><strong>0x238a...</strong> etiketi: <strong>PancakeSwap Infinity Vault</strong>.</li>
+            <li><strong>0x317c... ve 0x75f8...</strong> PancakeSwap etiketli kontrat adresleri.</li>
+            <li><strong>0x73d8...</strong> kontrat doğrulanmış, ancak açık public label yok.</li>
           </ul>
         </div>
-        <p class="holders-title">BSC Top 20 Holder Listesi</p>
+        <p class="exchange-title">Exchange Olan Adresler (BSC)</p>
+        <div class="exchange-wrap">
+          <ul class="exchange-list">
+            <li><strong>Bybit: Hot Wallet</strong> <span class="mono">0xf89d7b9c864f589bbF53a82105107622B35EaA40</span></li>
+            <li><strong>Gate 5</strong> <span class="mono">0xC882b111A75C0c657fC507C04FbFcD2cC984F071</span></li>
+            <li><strong>Gate 1</strong> <span class="mono">0x0D0707963952f2fBA59dD06f2b425ace40b492Fe</span></li>
+            <li><strong>MEXC 13</strong> <span class="mono">0x4982085C9e2F89F2eCb8131Eca71aFAD896e89CB</span></li>
+          </ul>
+        </div>
+        <p class="holders-title">BSC İlk 20 Holder Listesi</p>
 
         <div class="holders-wrap">
           <table>
@@ -411,7 +457,7 @@
           </table>
         </div>
 
-        <p class="foot">Top 20 tip dagilimi: 6 Contract | 10 Wallet/EOA | 4 Exchange Wallet</p>
+        <p class="foot">Top 20 tip dağılımı: 6 Contract | 10 Wallet/EOA | 4 Exchange Wallet</p>
       </article>
     </section>
   </main>
