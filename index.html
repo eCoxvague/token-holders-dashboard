@@ -155,6 +155,35 @@
       font-weight: 700;
     }
 
+    .analysis-title {
+      margin: 0 0 6px;
+      font-size: 13px;
+      color: #d8e9ff;
+      font-weight: 700;
+    }
+
+    .analysis-wrap {
+      border: 1px solid rgba(92, 141, 194, 0.28);
+      border-radius: 10px;
+      background: rgba(7, 24, 46, 0.62);
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      max-height: 120px;
+      overflow: auto;
+    }
+
+    .analysis-list {
+      margin: 0;
+      padding-left: 18px;
+      color: #c9dcf6;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .analysis-list li {
+      margin: 0 0 4px;
+    }
+
     .holders-wrap {
       border: 1px solid rgba(92, 141, 194, 0.28);
       border-radius: 10px;
@@ -273,6 +302,15 @@
         </div>
 
         <div class="contract">Contract: 0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9</div>
+        <p class="analysis-title">Contract Findings (ETH)</p>
+        <div class="analysis-wrap">
+          <ul class="analysis-list">
+            <li>Top contract wallets are mostly <strong>SafeProxy</strong> contracts.</li>
+            <li>Most are created by <strong>Pieverse: Deployer</strong> (same deployer cluster).</li>
+            <li>This pattern is typically used for <strong>multisig treasury/team/ops wallets</strong>.</li>
+            <li>One contract is from another creator address, but still SafeProxy type.</li>
+          </ul>
+        </div>
         <p class="holders-title">ETH Top 20 Holder Listesi</p>
 
         <div class="holders-wrap">
@@ -327,6 +365,15 @@
         </div>
 
         <div class="contract">Contract: 0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9</div>
+        <p class="analysis-title">Contract Findings (BSC)</p>
+        <div class="analysis-wrap">
+          <ul class="analysis-list">
+            <li><strong>0x9ff8... and 0x89df...</strong> are SafeProxy contracts (Pieverse deployer related).</li>
+            <li><strong>0x238a...</strong> is tagged as <strong>PancakeSwap Infinity Vault</strong>.</li>
+            <li><strong>0x317c... and 0x75f8...</strong> are PancakeSwap-tagged contract addresses.</li>
+            <li><strong>0x73d8...</strong> is verified as contract, but public contract label is not explicit.</li>
+          </ul>
+        </div>
         <p class="holders-title">BSC Top 20 Holder Listesi</p>
 
         <div class="holders-wrap">
